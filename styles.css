@@ -229,7 +229,17 @@ input:focus {
     outline: 1px solid rgb(30, 116, 255);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
+
+
+    body {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100vh;
+    }
+
     .main-flex-container {
         display: flex;
         flex-direction: column;
