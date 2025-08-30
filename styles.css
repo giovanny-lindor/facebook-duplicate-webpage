@@ -1,0 +1,268 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+* {
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+
+
+.main-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.left {
+    width: 580px;
+    padding: 0px 32px 0px 0px;
+}
+
+
+.h2-container {
+    width: 450px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+body {
+    background-color: rgb(242, 244, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.logo-container {
+    width: 400px;
+    margin-bottom: -35px ;
+}
+
+.logo-container img {
+    width: 320px;
+    margin-left: -30px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    background-color: white;
+    padding: 10px;
+    height: 350px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.32);
+}
+
+
+
+.log-in{
+    padding: 16px;
+    background-color: rgb(8, 102, 255);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 332px;
+    border: none;
+}
+
+.log-in:hover {
+    background-color: rgb(30, 116, 255);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+.create-acc {
+    padding: 12px;
+    background-color: rgb(66, 183, 42);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.create-acc:hover {
+    cursor: pointer;
+}
+
+.forgot-password a{
+    text-decoration: none;
+    color: rgb(8, 102, 255);
+    font-size: 14px;
+}
+
+.border-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border {
+    border: 1px solid rgb(218, 221, 225);
+    color: rgb(28, 30, 33);
+    width: 335px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+input[type="email"], input[type="password"] 
+{
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 223, 226);
+    width: 328px;
+    color: rgb(29, 33, 41);
+    font-size: 17px;
+    padding: 25px;
+    height: 20px;
+    margin: 8px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-a-page {
+    position: relative;
+    right: -490px;
+}
+
+.create-a-page p {
+    color: rgb(28, 30, 33);
+}
+
+.bottom-parent {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-div {
+    display: flex;
+    width: 70%;
+    margin-left: 10px;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(138, 141, 145);
+}
+
+.footer-div ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+}
+
+.footer-div-2 ul {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.footer-div a {
+    text-decoration: none;
+    color: rgb(138, 141, 145);
+
+}
+
+.footer-div a:hover {
+    text-decoration: underline;
+}
+
+.border-2 {
+    border: 1px solid rgb(221, 223, 226);
+    margin-left: 50px;
+    width: 85%;
+}
+
+.more {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 13px;
+    color: rgb(138, 141, 145);
+
+}
+
+.more a {
+    text-decoration: none;
+    color: rgb(138, 141, 145);
+}
+
+.more a:hover {
+    text-decoration: underline;
+}
+
+.bottom-parent-container {
+    width: 900px;
+    margin: auto;
+}
+
+input:focus {
+    outline: 1px solid rgb(30, 116, 255);
+}
+
+@media (max-width: 900px) {
+    .main-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        position: relative;
+        left: 80px;
+    }
+
+    .create-a-page {
+        position: relative;
+        left: 70px;
+    }
+
+    .bottom-parent-container {
+        margin-left: -40px;
+    }
+
+    .footer-div ul {
+        width: 100%;
+    }
+
+    .footer-div-2 {
+        width: 900px;
+    }
+
+    .footer-div-2 ul {
+        width: 100%;
+        display: flex;
+        font-size: 13px;
+
+    }
+    
+}
